@@ -1,6 +1,6 @@
 # [Lizards 2 Pathfinder](https://azpald.github.io/rucoy/)
 ##
-![alt text](https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/General_Krinok.gif)
+![alt text](https://github.com/Na-Hikari/rucoy/blob/master/images/General_Krinok.gif)
 Lizard 2 Pathfinder is for the Rucoy Online community.
 
 >
