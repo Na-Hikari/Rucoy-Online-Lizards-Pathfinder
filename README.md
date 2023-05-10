@@ -1,5 +1,5 @@
-# [Lizards Pathfinder](https://na-hikari.github.io/Rucoy-Online-Lizards-Pathfinder/)
-##
+## [Lizards Pathfinder](https://na-hikari.github.io/Rucoy-Online-Lizards-Pathfinder/)
+#
 ![alt text](./images/General_Krinok.gif)
 Lizards Pathfinder was created for the Rucoy Online community.
 
