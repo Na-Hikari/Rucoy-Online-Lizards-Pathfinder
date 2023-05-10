@@ -1,6 +1,6 @@
-# [Lizards Pathfinder](https://Na-Hikari.github.io/rucoy/)
+# [Lizards Pathfinder](https://na-hikari.github.io/Rucoy-Online-Lizards-Pathfinder/)
 ##
-![alt text](https://github.com/Na-Hikari/rucoy/blob/master/images/General_Krinok.gif)
+![alt text](https://na-hikari.github.io/Rucoy-Online-Lizards-Pathfinder//blob/master/images/General_Krinok.gif)
 Lizard Pathfinder is for the Rucoy Online community.
 
 >
