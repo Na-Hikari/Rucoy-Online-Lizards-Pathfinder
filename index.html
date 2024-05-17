@@ -82,24 +82,27 @@
       <article> <a href="https://www.rucoyonline.com">
         <img src="./images/Rucoy Online.png" alt="Rucoy Online" style="width:100%;">
       </a> 
-      <audio controls>
-        <source src="./music/01 Rucoy Online - town1.mp3" type="audio/mp3">
-        <source src="./music/02 Rucoy Online - arena.mp3" type="audio/mp3">
-        <source src="./music/03 Rucoy Online - field01.mp3" type="audio/mp3">
-        <source src="./music/04 Rucoy Online - field02.mp3" type="audio/mp3">
-        <source src="./music/05 Rucoy Online - field03.mp3" type="audio/mp3">
-        <source src="./music/06 Rucoy Online - dungeon01.mp3" type="audio/mp3">
-        <source src="./music/07 Rucoy Online - dungeon02.mp3" type="audio/mp3">
-        <source src="./music/08 Rucoy Online - dungeon03.mp3" type="audio/mp3">
-        <source src="./music/09 Rucoy Online - dungeon04.mp3" type="audio/mp3">
-        <source src="./music/10 Rucoy Online - dungeon05.mp3" type="audio/mp3">
-        <source src="./music/11 Rucoy Online - dungeon06.mp3" type="audio/mp3">
-        <source src="./music/12 Rucoy Online - dungeon07.mp3" type="audio/mp3">
-        <source src="./music/13 Rucoy Online - dungeon08.mp3" type="audio/mp3">
-        <source src="./music/14 Rucoy Online - dungeon09.mp3" type="audio/mp3">
-        <source src="./music/15 Rucoy Online - dungeon10.mp3" type="audio/mp3">
-        <source src="./music/16 Rucoy Online - boss.mp3" type="audio/mp3">
-      </audio>
+        
+    <div id="player"></div>
+
+    <!-- Audio player script -->
+    <script src="js/AudioPlayer.js"></script>
+    <script>
+      var iconImage = null; // You can set your icon image here if needed
+
+      AP.init({
+        container: '#player',
+        volume: 0.7,
+        autoPlay: true,
+        notification: false,
+        playList: [
+          { 'icon': iconImage, 'title': 'Try Everything', 'file': 'mp3/try-everything.mp3' },
+          { 'icon': iconImage, 'title': 'Let It Go', 'file': 'mp3/let-it-go.mp3' }
+        ]
+      });
+    </script>
+  </div>
+    
       <h1><span style="background-color: black; color: white;">Lizards Pathfinder!</span></h1>
       <h3><span style="background-color: bLack; color: white;">Floor 13: L3</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 21: L2</span></h3>
