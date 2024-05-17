@@ -1,0 +1,8 @@
+.banner {
+  width: 100%; /* Set the banner width to 100% initially */
+
+  /* Add media query for screens larger than 768px (adjust as needed) */
+  @media screen and (min-width: 768px) {
+    width: 50%; /* Reduce the banner width to 50% on larger screens */
+  }
+}
