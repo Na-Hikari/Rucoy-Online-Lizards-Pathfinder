@@ -82,7 +82,7 @@
       <a href="https://www.rucoyonline.com">
         <img src="./images/Rucoy Online.png" alt="Rucoy Online" style="width:100%;">
       </a>
-      <audio controls autoplay loop>
+      <audio id="audioPlayer" controls autoplay>
         <source src="./music/01 town1.mp3" type="audio/mp3">
         <source src="./music/02 arena.mp3" type="audio/mp3">
         <source src="./music/03 field01.mp3" type="audio/mp3">
@@ -100,6 +100,44 @@
         <source src="./music/15 dungeon10.mp3" type="audio/mp3">
         <source src="./music/16 boss.mp3" type="audio/mp3">
       </audio>
+      <script>
+  const audioPlayer = document.getElementById('audioPlayer');
+  const playlist = [
+    './music/01 town1.mp3',
+    './music/02 arena.mp3',
+    './music/03 field01.mp3',
+    './music/04 field02.mp3',
+    './music/05 field03.mp3',
+    './music/06 dungeon01.mp3',
+    './music/07 dungeon02.mp3',
+    './music/08 dungeon03.mp3',
+    './music/09 dungeon04.mp3',
+    './music/10 dungeon05.mp3',
+    './music/11 dungeon06.mp3',
+    './music/12 dungeon07.mp3',
+    './music/13 dungeon08.mp3',
+    './music/14 dungeon09.mp3',
+    './music/15 dungeon10.mp3',
+    './music/16 boss.mp3'
+  ];
+  let currentTrackIndex = 0;
+
+  function playNextTrack() {
+    currentTrackIndex++;
+    if (currentTrackIndex >= playlist.length) {
+      currentTrackIndex = 0; // Loop back to the first track
+    }
+    audioPlayer.src = playlist[currentTrackIndex];
+    audioPlayer.play();
+  }
+
+  // Play the next track when the current one ends
+  audioPlayer.addEventListener('ended', playNextTrack);
+
+  // Initial play of the first track
+  audioPlayer.src = playlist[currentTrackIndex];
+  audioPlayer.play();
+</script>
       <h1><span style="background-color: black; color: white;">Lizards Pathfinder!</span></h1>
       <h3><span style="background-color: black; color: white;">Floor 13: L3</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 21: L2</span></h3>
