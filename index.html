@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lizard Pathfinder</title>
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
   <link rel="shortcut icon" type="image/jpg" href="./images/General_Krinok.gif" />
   <style>
     body {
       background-image: url('Background Link here');
-      background-repeat:
-        no-repeat;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
       background-color: black;
@@ -77,49 +75,32 @@
   </style>
 </head>
 
-  <body>
-    <div>
-      <article> <a href="https://www.rucoyonline.com">
+<body>
+  <div>
+    <article>
+      <a href="https://www.rucoyonline.com">
         <img src="./images/Rucoy Online.png" alt="Rucoy Online" style="width:100%;">
-      </a> 
-      <audio controls>
-        <source src="./music/01 Rucoy Online - town1.mp3" type="audio/mp3">
+      </a>
       <audio id="audioPlayer" controls>
-  <source src="./music/01 Rucoy Online - town1.mp3" type="audio/mp3">
-  <source src="./music/02 Rucoy Online - arena.mp3" type="audio/mp3">
-  <source src="./music/03 Rucoy Online - field01.mp3" type="audio/mp3">
-  <source src="./music/04 Rucoy Online - field02.mp3" type="audio/mp3">
-  <source src="./music/05 Rucoy Online - field03.mp3" type="audio/mp3">
-  <source src="./music/06 Rucoy Online - dungeon01.mp3" type="audio/mp3">
-  <source src="./music/07 Rucoy Online - dungeon02.mp3" type="audio/mp3">
-  <source src="./music/08 Rucoy Online - dungeon03.mp3" type="audio/mp3">
-  <source src="./music/09 Rucoy Online - dungeon04.mp3" type="audio/mp3">
-  <source src="./music/10 Rucoy Online - dungeon05.mp3" type="audio/mp3">
-  <source src="./music/11 Rucoy Online - dungeon06.mp3" type="audio/mp3">
-  <source src="./music/12 Rucoy Online - dungeon07.mp3" type="audio/mp3">
-  <source src="./music/13 Rucoy Online - dungeon08.mp3" type="audio/mp3">
-  <source src="./music/14 Rucoy Online - dungeon09.mp3" type="audio/mp3">
-  <source src="./music/15 Rucoy Online - dungeon10.mp3" type="audio/mp3">
-  <source src="./music/16 Rucoy Online - boss.mp3" type="audio/mp3">
-</audio>
-
-<script>
-  const audioPlayer = document.getElementById('audioPlayer');
-  const sources = audioPlayer.getElementsByTagName('source');
-  
-  // Play the first source when the page loads
-  audioPlayer.src = sources[0].src;
-  audioPlayer.play();
-
-  // Function to change audio source and play it
-  function changeSourceAndPlay(index) {
-    audioPlayer.src = sources[index].src;
-    audioPlayer.play();
-  }
-  </script>
-
+        <source src="./music/01 Rucoy Online - town1.mp3" type="audio/mp3">
+        <source src="./music/02 Rucoy Online - arena.mp3" type="audio/mp3">
+        <source src="./music/03 Rucoy Online - field01.mp3" type="audio/mp3">
+        <source src="./music/04 Rucoy Online - field02.mp3" type="audio/mp3">
+        <source src="./music/05 Rucoy Online - field03.mp3" type="audio/mp3">
+        <source src="./music/06 Rucoy Online - dungeon01.mp3" type="audio/mp3">
+        <source src="./music/07 Rucoy Online - dungeon02.mp3" type="audio/mp3">
+        <source src="./music/08 Rucoy Online - dungeon03.mp3" type="audio/mp3">
+        <source src="./music/09 Rucoy Online - dungeon04.mp3" type="audio/mp3">
+        <source src="./music/10 Rucoy Online - dungeon05.mp3" type="audio/mp3">
+        <source src="./music/11 Rucoy Online - dungeon06.mp3" type="audio/mp3">
+        <source src="./music/12 Rucoy Online - dungeon07.mp3" type="audio/mp3">
+        <source src="./music/13 Rucoy Online - dungeon08.mp3" type="audio/mp3">
+        <source src="./music/14 Rucoy Online - dungeon09.mp3" type="audio/mp3">
+        <source src="./music/15 Rucoy Online - dungeon10.mp3" type="audio/mp3">
+        <source src="./music/16 Rucoy Online - boss.mp3" type="audio/mp3">
+      </audio>
       <h1><span style="background-color: black; color: white;">Lizards Pathfinder!</span></h1>
-      <h3><span style="background-color: bLack; color: white;">Floor 13: L3</span></h3>
+      <h3><span style="background-color: black; color: white;">Floor 13: L3</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 21: L2</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 1: L1</span></h3>
       <script>
@@ -169,7 +150,7 @@
               T: path.T + "L",
               R: path.R + RUTE[from][0] + "_"
             });
-            done = true;
+                        done = true;
           }
           if ((sudah.indexOf(RUTE[from][1]) < 1) && RUTE[from][1] == to) {
             result.push({
@@ -227,8 +208,6 @@
                 let tmp;
                 let table = document.createElement("table");
                 let row = document.createElement("tr");
-                // row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = parseInt(j)+1) && (tmp.setAttribute("rowspan","2") || 1) && tmp ); 
-                // row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = found.T.length+" Steps") && (tmp.setAttribute("rowspan","2") || 1) && tmp ); 
                 row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = "Steps") && tmp);
                 row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = "Move") && tmp);
                 for (let j = 0; j < found.T.length; j++) {
@@ -291,18 +270,20 @@
           <td>4</td>
           <td>5</td>
         </tr>
-      </table> <br>
-      <p><span style="background-color: black; color: white;"> Input Current Location and Destination. </span></p> From: <input type="number" min="1" max="25" id="from" onchange="" value="1"> To: <input type="number" min="1" max="25" id="to" onchange="" value="21"> <button onclick="searchRoute()"> GO </button>
+      </table>
+      <br>
+      <p><span style="background-color: black; color: white;">Input Current Location and Destination.</span></p>
+      From: <input type="number" min="1" max="25" id="from" onchange="" value="1"> 
+      To: <input type="number" min="1" max="25" id="to" onchange="" value="21"> 
+      <button onclick="searchRoute()">GO</button>
       <div id="result">
-        <table align="center"> </table>
+        <table align="center"></table>
       </div>
     </article>
     <footer>
-      <p class="lead"> Credit to <a href="https://github.com/azpald" class="text-white"> <u>azpald</u></a>
-      <p>Copyright © 2019 - <script>
-          document.write(new Date().getFullYear())
-        </script> Lizards Pathfinder All Rights Reserved</p>
+      <p class="lead">Credit to <a href="https://github.com/azpald" class="text-white"><u>azpald</u></a></p>
+      <p>Copyright © 2019 - <script>document.write(new Date().getFullYear())</script> Lizards Pathfinder All Rights Reserved</p>
     </footer>
+  </div>
 </body>
-
 </html>
