@@ -82,6 +82,7 @@
       <a href="https://www.rucoyonline.com">
         <img src="./images/Rucoy Online.png" alt="Rucoy Online" style="width:100%;">
       </a>
+      
       <audio id="audioPlayer" controls autoplay>
         <source src="./music/01 town1.mp3" type="audio/mp3">
         <source src="./music/02 arena.mp3" type="audio/mp3">
@@ -138,10 +139,12 @@
   audioPlayer.src = playlist[currentTrackIndex];
   audioPlayer.play();
 </script>
+      
       <h1><span style="background-color: black; color: white;">Lizards Pathfinder!</span></h1>
       <h3><span style="background-color: black; color: white;">Floor 13: L3</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 21: L2</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 1: L1</span></h3>
+      
       <script>
         var RUTE = {
           1: [16, 8],
@@ -273,6 +276,7 @@
           searchRoute();
         };
       </script>
+      
       <table class="center">
         <tr>
           <td>21</td>
@@ -310,17 +314,20 @@
           <td>5</td>
         </tr>
       </table> <br>
+      
       <p><span style="background-color: black; color: white;"> Input Current Location and Destination. </span></p> From: <input type="number" min="1" max="25" id="from" onchange="" value="1"> To: <input type="number" min="1" max="25" id="to" onchange="" value="21"> <button onclick="searchRoute()"> GO </button>
       <div id="result">
         <table align="center"> </table>
       </div>
     </article>
+    
     <footer>
       <p class="lead"> Credit to <a href="https://github.com/azpald" class="text-white"> <u>azpald</u></a>
       <p>Copyright © 2019 - <script>
           document.write(new Date().getFullYear())
         </script> Lizards Pathfinder All Rights Reserved</p>
     </footer>
+    
   </div>
 </body>
 
