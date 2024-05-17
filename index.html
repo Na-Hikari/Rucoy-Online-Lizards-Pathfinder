@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lizard Pathfinder</title>
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
   <link rel="shortcut icon" type="image/jpg" href="./images/General_Krinok.gif" />
   <style>
     body {
       background-image: url('Background Link here');
-      background-repeat:
-        no-repeat;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
       background-color: black;
@@ -77,11 +76,12 @@
   </style>
 </head>
 
-  <body>
-    <div>
-      <article> <a href="https://www.rucoyonline.com">
+<body>
+  <div>
+    <article>
+      <a href="https://www.rucoyonline.com">
         <img src="./images/Rucoy Online.png" alt="Rucoy Online" style="width:100%;">
-      </a> 
+      </a>
       <audio controls>
         <source src="./music/01 Rucoy Online - town1.mp3" type="audio/mp3">
         <source src="./music/02 Rucoy Online - arena.mp3" type="audio/mp3">
@@ -101,7 +101,7 @@
         <source src="./music/16 Rucoy Online - boss.mp3" type="audio/mp3">
       </audio>
       <h1><span style="background-color: black; color: white;">Lizards Pathfinder!</span></h1>
-      <h3><span style="background-color: bLack; color: white;">Floor 13: L3</span></h3>
+      <h3><span style="background-color: black; color: white;">Floor 13: L3</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 21: L2</span></h3>
       <h3><span style="background-color: black; color: white;">Floor 1: L1</span></h3>
       <script>
@@ -143,7 +143,7 @@
           if (path.T.length >= max) return [];
           let done = false;
           let result = [];
-          let sudah = path.R.split("_").map(function(el) {
+          let sudah = path.R.split("_").map(function (el) {
             return parseInt(el) || 0;
           });
           if ((sudah.indexOf(RUTE[from][0]) < 1) && RUTE[from][0] == to) {
@@ -201,7 +201,7 @@
           while ((founds == null || !founds[0]) && i <= 25) {
             founds = cariRute(from, to, i);
             if (founds != null && founds[0]) {
-              founds = founds.sort(function(a, b) {
+              founds = founds.sort(function (a, b) {
                 return a.T.length > b.T.length ? 1 : -1
               });
               for (let j in founds) {
@@ -209,8 +209,6 @@
                 let tmp;
                 let table = document.createElement("table");
                 let row = document.createElement("tr");
-                // row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = parseInt(j)+1) && (tmp.setAttribute("rowspan","2") || 1) && tmp ); 
-                // row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = found.T.length+" Steps") && (tmp.setAttribute("rowspan","2") || 1) && tmp ); 
                 row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = "Steps") && tmp);
                 row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = "Move") && tmp);
                 for (let j = 0; j < found.T.length; j++) {
@@ -233,7 +231,7 @@
           }
           result.innerText = "Route Not Found";
         }
-        onload = function() {
+        onload = function () {
           searchRoute();
         };
       </script>
@@ -285,6 +283,7 @@
           document.write(new Date().getFullYear())
         </script> Lizards Pathfinder All Rights Reserved</p>
     </footer>
+  </div>
 </body>
 
 </html>
